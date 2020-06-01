@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <style>
+        html, body{
+            margin: 0;
+        }
+        span{
+            color: #fff;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bolder;
+            letter-spacing: 8px;
+        }
+        .bg1{
+            background-image: url("img/sky.jpg");
+            width: 100%;
+            height: 1000px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .cal{
+            display: inline;
+            font-family: "Noto sans KR", sans-serif;
+            border-spacing: 8px;
+            color: #444;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        .caption{
+            padding-top: 150px;
+            padding-bottom: 150px;
+            left: 0;
+            top: 50%;
+            text-align: center;
+        }
+        caption{
+            margin-bottom: 50px;
+        }
+        th{
+            font-size: 16px;
+            width: 70px;
+            height: 40px;
+        }
+        td{
+            font-weight: normal;
+            font-size: 14px;
+            height: 70px;
+            text-align: center;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .sun{
+            color: #ff1a70;
+        }
+        .sat{
+            color: #0054ff;
+        }
+        #last{
+            color: #888;
+        }
+        .back{
+            text-align: center;
+            display: inline-block;
+            width: 100px;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: normal;
+            color: #888;
+            border: 2px solid #888;
+            border-radius: 20px;
+        }
+        a:hover{
+            background-color: #888;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="bg1">
+            <div class="caption">
+                <table class="cal">
+                    <caption>
+                        <span class="april">2020 April</span>
+                    </caption>
+                    <tr>
+                        <th class="sun">SUN</th>
+                        <th>MON</th>
+                        <th>TUE</th>
+                        <th>WED</th>
+                        <th>THU</th>
+                        <th>FRI</th>
+                        <th class="sat">SAT</th>
+                    </tr>
+                    <tr>
+                        <td class="sun" id="last">29</td>
+                        <td id="last">30</td>
+                        <td id="last">31</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td class="sat">4</td>
+                    </tr>
+                    <tr>
+                        <td class="sun">5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td class="sat">11</td>
+                    </tr>
+                    <tr>
+                        <td class="sun">12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td class="sun">15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td class="sat">18</td>
+                    </tr>
+                    <tr>
+                        <td class="sun">19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td class="sat">25</td>
+                    </tr>
+                    <tr>
+                        <td class="sun">26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td class="sun">30</td>
+                        <td class="sun" id="last">1</td>
+                        <td class="sat" id="last">2</td>
+                    </tr>
+                    <tr>
+                        <td colspan="7"><a href="index.html" class="back">Back</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
